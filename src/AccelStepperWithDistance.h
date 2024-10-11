@@ -1,7 +1,8 @@
 #ifndef AccelStepperWithDistance_h
 #define AccelStepperWithDistance_h
 
-#include <AccelStepper.h>
+#include <AccelStepper.h>//uses accelstepper with 74hct595 library
+#include <Shifty.h>
 
 class AccelStepperWithDistance : public AccelStepper {
     private:
@@ -18,6 +19,16 @@ class AccelStepperWithDistance : public AccelStepper {
 			uint8_t pin3 = 4, 
 			uint8_t pin4 = 5, 
 			bool enable = true);
+		
+		AccelStepperWithDistance(
+			uint8_t interface = AccelStepper::DRIVER, 
+			Shifty *_shift = new Shifty(), 
+			uint8_t pin1 = 2, 
+			uint8_t pin2 = 3, 
+			uint8_t pin3 = 4, 
+			uint8_t pin4 = 5, 
+			bool enable = true);
+
 
 		void setMicroStep(int value);
 

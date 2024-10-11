@@ -1,0 +1,20 @@
+{
+  "name": "accel-stepper-with-distances",
+  "description": "Experimental stepper driver for Teensy 4.x boards",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/mateusjunges/accel-stepper-with-distances.git"
+  },
+  "authors":
+  {
+    "name": "mateusjunges",
+    "url": "https://github.com/mateusjunges",
+    "maintainer": true
+  },
+  "homepage": "https://luni64.github.io/TeensyStep4",
+  "version": "0.0.3",
+  "frameworks": "arduino",
+  "platforms": ["Teensy"]
+
+}
